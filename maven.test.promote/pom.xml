@@ -20,7 +20,7 @@
 
 	<dependencies>
             <dependency>
-                <groupId>com.fastcube.tibco.Infra.rexel_app1.test</groupId>
+                <groupId>com.fastcube.tibco.Infra.test.test</groupId>
                 <artifactId>bw.mc-test.application</artifactId>
                 <version>${project.version}</version>
                 <type>ear</type>
