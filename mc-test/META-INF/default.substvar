@@ -1,9 +1,8 @@
-<?xml version = "1.0" encoding = "UTF-8"?>
-<repository xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "http://www.tibco.com/xmlns/repo/types/2002">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><repository xmlns="http://www.tibco.com/xmlns/repo/types/2002" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<globalVariables>
 		<globalVariable>
 			<name>BW.DEPLOYMENTUNIT.TYPE</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -12,7 +11,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.APPNODE.NAME</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -21,7 +20,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.DEPLOYMENTUNIT.NAME</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -39,7 +38,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.DOMAIN.NAME</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -48,7 +47,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.DEPLOYMENTUNIT.VERSION</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -57,7 +56,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.APPSPACE.NAME</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -66,7 +65,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.MODULE.VERSION</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -75,7 +74,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>BW.MODULE.NAME</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -156,7 +155,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Services/MC-test/MCI/organization/sub_domain</name>
-			<value>Details of the country&apos;s scope ex: NLN when country is N</value>
+			<value>Details of the country's scope ex: NLN when country is N</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -165,7 +164,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Services/MC-test/MCI/organization/banner</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -174,7 +173,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Services/MC-test/MCI/exchange/owner</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -228,7 +227,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Services/MC-test/MCI/exchange/sourceAddress</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -246,12 +245,36 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/Services/MC-test/MCI/exchange/interaction_type</name>
-			<value></value>
+			<value/>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
 		</globalVariable>
-	</globalVariables>
+	<globalVariable>
+			<name>/Services/MC-test/MCI/omen-esb-in/flowCode</name>
+			<value>rexel.test.omen</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-test/MCI/omen-esb-in/taskCode</name>
+			<value>MCS-REST-22</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-test/MCI/omen-esb-in/serviceName</name>
+			<value>test.omen.esb-in</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable></globalVariables>
 </repository>
