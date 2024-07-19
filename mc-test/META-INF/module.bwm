@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:SoapMsgHeader="http://www.tibcopsg.com/ESB/framework/messaging/wsdl/SoapMsgHeader" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:wsdl="http://com.fastcube.tibco.Infra.rexel_app1/mc-test/mc/yoru/MCS-SOAP-20-serviceName-esb/wsdl" xmlns:xsd="http://com.fastcube.tibco.Infra.rexel_app1/mc-test/mc/yoru/MCS-SOAP-20-serviceName-esb/xsd" xmi:id="_KNoJkHwIEeeX-t-7NMsOMg" targetNamespace="http://tns.tibco.com/bw/composite/mc-test" name="mc-test" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_Ahrb1IJiEeefKJqfpdbXqw" name="MCS-SOAP-20-serviceName-esb" promote="ComponentMCS-SOAP-20-serviceName-esb-in/MCS-SOAP-20-serviceName-esb">
+    <sca:interface.wsdl xmi:id="_Ah0lwIJiEeefKJqfpdbXqw" interface="http://com.fastcube.tibco.Infra.rexel_app1/mc-test/mc/yoru/MCS-SOAP-20-serviceName-esb/wsdl#wsdl.interface(MCS-SOAP-20-serviceName-esb)" scaext:wsdlLocation="../Service%20Descriptors/MCS-SOAP-20-serviceName-esb.wsdl"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_BrlDIIJiEeefKJqfpdbXqw" name="SOAPServiceBinding" targetNamespace="http://www.tibco.com/c26422fb67664adcbc1050f89fcc425f/SOAPServiceBinding" portTypeQName="wsdl:MCS-SOAP-20-serviceName-esb" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/mc-test/Service%20Descriptors/MCS-SOAP-20-serviceName-esb.wsdl">
+      <bindingType xmi:id="_BrlDIYJiEeefKJqfpdbXqw"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_EZieMIJiEeefKJqfpdbXqw" endpointURI="/SOAPServiceBinding/MCS-SOAP-20-serviceName-esb/" httpConnector="Connections.httpConnections.API.serviceName-API"/>
+      <operationConfiguration xmi:id="_BrlDIoJiEeefKJqfpdbXqw" description="" operationName="serviceName" action="serviceName" actionNeeded="true">
+        <bindingType xmi:id="_BrlDI4JiEeefKJqfpdbXqw"/>
+        <messageConfiguration xmi:id="_BrlDJIJiEeefKJqfpdbXqw" messageQName="wsdl:serviceNameRequest" wsdlLocation="platform:/resource/mc-test/Service%20Descriptors/MCS-SOAP-20-serviceName-esb.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_BrlDJYJiEeefKJqfpdbXqw" partName="parameters" partElementName="xsd:serviceNameRequest"/>
+          <unboundHeaderConfigurations xmi:id="_gmBAMMkdEee2woAlfmVVwg" partName="p_msgHeader" messageQName="SoapMsgHeader:m_msgHeader" wsdlLocation="platform:/resource/bw.core_common.sharedmodule/Service%20Descriptors/Messaging/SoapMsgHeaders.wsdl"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_BrlDJoJiEeefKJqfpdbXqw" messageQName="wsdl:serviceNameResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/mc-test/Service%20Descriptors/MCS-SOAP-20-serviceName-esb.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_BrlDJ4JiEeefKJqfpdbXqw" partName="parameters" partElementName="xsd:serviceNameResponse"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_BrlDKIJiEeefKJqfpdbXqw" messageQName="wsdl:serviceNameFault" messageDirection="FAULT" action="Fault" wsdlLocation="platform:/resource/mc-test/Service%20Descriptors/MCS-SOAP-20-serviceName-esb.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_BrlDKYJiEeefKJqfpdbXqw" partName="parameters" partElementName="xsd:serviceNameFault"/>
+        </messageConfiguration>
+        <context xmi:id="_Bru0IIJiEeefKJqfpdbXqw">
+          <inputMapping xmi:id="_Bru0IYJiEeefKJqfpdbXqw" parameterName="parameter" expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:ns=&quot;http://www.tibcopsg.com/ESB/framework/messaging/msg_header_v1&quot; xmlns:ns1=&quot;http://www.tibcopsg.com/ESB/framework/context/process_context_v1&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Headers&quot;/>&lt;xsl:template name=&quot;parameter&quot; match=&quot;/&quot;>&lt;ns1:soapServiceContext>&lt;xsl:copy-of select=&quot;$Headers/m_msgHeader.p_msgHeader/ns:msgHeader&quot;/>&lt;/ns1:soapServiceContext>&lt;/xsl:template>&lt;/xsl:stylesheet>"/>
+          <outputMapping xmi:id="_Bru0IoJiEeefKJqfpdbXqw" direction="OUTPUT"/>
+          <faultMappings xmi:id="_Bru0I4JiEeefKJqfpdbXqw" direction="FAULT" faultName="Fault"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_Bru0JIJiEeefKJqfpdbXqw" bindingName="SOAPServiceBinding"/>
+  </sca:service>
+  <sca:property xmi:id="_KbMEcHwIEeeX-t-7NMsOMg" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_KbVOYHwIEeeX-t-7NMsOMg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_KbVOYXwIEeeX-t-7NMsOMg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_KbVOYnwIEeeX-t-7NMsOMg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Kbe_YHwIEeeX-t-7NMsOMg" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Kbe_YXwIEeeX-t-7NMsOMg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Kbe_YnwIEeeX-t-7NMsOMg" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Kbe_Y3wIEeeX-t-7NMsOMg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_KbowYHwIEeeX-t-7NMsOMg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_pNKMQKxvEemTP_MB0ph3PQ" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_5UOsQHxDEeeX_pdwDsdYZw" name="/Services/MC-test/hostname" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_5b2XMHxDEeeX_pdwDsdYZw" name="/Services/MC-test/port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_lrUh4HwVEeeX-t-7NMsOMg" name="/Services/MC-test/MCI/yoru-esb-in/flowCode" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_0Er0IHwVEeeX-t-7NMsOMg" name="/Services/MC-test/MCI/yoru-esb-in/taskCode" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_1ZC_AHwVEeeX-t-7NMsOMg" name="/Services/MC-test/MCI/yoru-esb-in/serviceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_jpcmkOB1Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/organization/scope" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_krItEOB1Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/organization/orgDomain" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ksvPkOB1Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/organization/sub_domain" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kwMMMOB1Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/organization/banner" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kOSZAOB1Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/exchange/owner" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_81c8AOB1Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/exchange/name" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_84gQAOB1Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/exchange/exchangeVersion" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_87X90OB1Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/exchange/object_type" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_89onoOB1Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/exchange/object_id" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9AH68OB1Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/exchange/sourceName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_C29ygOB2Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/exchange/sourceAddress" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_C-Vl0OB2Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/exchange/destinationName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_EqF9AOB2Ee6d56nWP4nIAQ" name="/Services/MC-test/MCI/exchange/interaction_type" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_Ahrb0IJiEeefKJqfpdbXqw" name="ComponentMCS-SOAP-20-serviceName-esb-in" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Ahrb0YJiEeefKJqfpdbXqw" processName="MC-test.MCI.yoru.MCS-SOAP-20-serviceName-esb-in"/>
+    <sca:service xmi:id="_Ahrb0oJiEeefKJqfpdbXqw" name="MCS-SOAP-20-serviceName-esb">
+      <sca:interface.wsdl xmi:id="_Ahrb04JiEeefKJqfpdbXqw" interface="http://com.fastcube.tibco.Infra.rexel_app1/mc-test/mc/yoru/MCS-SOAP-20-serviceName-esb/wsdl#wsdl.interface(MCS-SOAP-20-serviceName-esb)" scaext:wsdlLocation="../Service%20Descriptors/MCS-SOAP-20-serviceName-esb.wsdl"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
