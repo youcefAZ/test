@@ -234,5 +234,29 @@
 			<type>String</type>
 			<isOverride>false</isOverride>
 			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-test/MCI/ObjectAction-esb-in/flowCode</name>
+			<value>rexel.test.ObjectAction</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-test/MCI/ObjectAction-esb-in/taskCode</name>
+			<value>taskCodeMCI</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
+		</globalVariable><globalVariable>
+			<name>/Services/MC-test/MCI/ObjectAction-esb-in/serviceName</name>
+			<value>test.ObjectAction.esb-in</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+			<useLookupValue>false</useLookupValue>
 		</globalVariable></globalVariables>
 </repository>
